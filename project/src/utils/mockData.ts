@@ -1,0 +1,135 @@
+import { Project, User } from '../types';
+
+export const mockUsers: User[] = [
+  {
+    id: '1',
+    name: 'John Doe',
+    email: 'john@example.com',
+    role: 'buyer',
+    avatar: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150',
+  },
+  {
+    id: '2',
+    name: 'Jane Smith',
+    email: 'jane@example.com',
+    role: 'seller',
+    avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150',
+  },
+  {
+    id: '3',
+    name: 'Mike Johnson',
+    email: 'mike@example.com',
+    role: 'developer',
+    avatar: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=150',
+  },
+  {
+    id: '4',
+    name: 'Admin User',
+    email: 'admin@projectmarket.com',
+    role: 'admin',
+    avatar: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150',
+  },
+];
+
+export const mockProjects: Project[] = [
+  {
+    id: '1',
+    title: 'E-commerce Website Template',
+    description: 'A fully responsive e-commerce website template with cart functionality, product listings, and checkout process.',
+    type: 'website',
+    category: 'E-commerce',
+    price: 129,
+    previewUrl: 'https://example.com/preview/ecommerce',
+    screenshots: [
+      'https://images.pexels.com/photos/6956903/pexels-photo-6956903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      'https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    ],
+    seller: {
+      id: '2',
+      name: 'Jane Smith',
+      rating: 4.8,
+    },
+    status: 'approved',
+    createdAt: '2023-09-15T14:30:00Z',
+  },
+  {
+    id: '2',
+    title: 'Personal Portfolio Website',
+    description: 'A modern portfolio website with smooth animations, project showcases, and contact form.',
+    type: 'portfolio',
+    category: 'Personal',
+    price: 79,
+    previewUrl: 'https://example.com/preview/portfolio',
+    screenshots: [
+      'https://images.pexels.com/photos/5926389/pexels-photo-5926389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      'https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    ],
+    seller: {
+      id: '3',
+      name: 'Mike Johnson',
+      rating: 4.9,
+    },
+    status: 'approved',
+    createdAt: '2023-10-05T09:45:00Z',
+  },
+  {
+    id: '3',
+    title: 'Restaurant Booking System',
+    description: 'A complete restaurant booking system with table management, reservations, and admin dashboard.',
+    type: 'custom',
+    category: 'Hospitality',
+    price: 249,
+    previewUrl: 'https://example.com/preview/restaurant',
+    screenshots: [
+      'https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      'https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    ],
+    seller: {
+      id: '2',
+      name: 'Jane Smith',
+      rating: 4.8,
+    },
+    status: 'approved',
+    createdAt: '2023-11-12T16:20:00Z',
+  },
+  {
+    id: '4',
+    title: 'Data Analysis Dashboard',
+    description: 'A PhD project focused on data visualization with interactive charts, filters, and export functionality.',
+    type: 'phd',
+    category: 'Data Science',
+    price: 349,
+    previewUrl: 'https://example.com/preview/dashboard',
+    screenshots: [
+      'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      'https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    ],
+    seller: {
+      id: '3',
+      name: 'Mike Johnson',
+      rating: 4.9,
+    },
+    status: 'pending',
+    createdAt: '2024-01-20T11:15:00Z',
+  },
+  {
+    id: '5',
+    title: 'Mobile App Design System',
+    description: 'A comprehensive UI/UX design system for mobile applications with component library and style guides.',
+    type: 'custom',
+    category: 'Design',
+    price: 189,
+    previewUrl: 'https://example.com/preview/design-system',
+    screenshots: [
+      'https://images.pexels.com/photos/193004/pexels-photo-193004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      'https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    ],
+    seller: {
+      id: '2',
+      name: 'Jane Smith',
+      rating: 4.8,
+    },
+    status: 'rejected',
+    createdAt: '2024-02-05T13:40:00Z',
+  },
+];
